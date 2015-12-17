@@ -494,6 +494,9 @@ section.module.parallax-11 {
 section.module.parallax-12 {
   background-image: url("../img/tibetlandscape.jpg");
 }
+section.module.parallax-13 {
+  background-image: url("../img/Nomads-Dancing.jpg");
+}
 
 @media all and (min-width: 600px) {
   section.module h2 {

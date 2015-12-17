@@ -53,6 +53,15 @@ def sources():
     website_info = get_website_info()
     website_info['current'] = 'sources'
     return render_template("sources.html", info=website_info)
+@app.route("/forum")
+def forum():
+    website_info = get_website_info()
+
+    return render_template("forum.html", info=website_info)
+@app.route("/people")
+def people():
+    website_info = get_website_info()
+    return render_template("featured_celebs.html", info=website_info)
 @app.errorhandler(404)
 def page_not_found(error):
   return render_template('404.html'), 404
