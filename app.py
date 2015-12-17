@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template
-import json
+import json, os
 
 app = Flask(__name__)
 #app.config["DEBUG"] = True
@@ -58,5 +58,5 @@ def page_not_found(error):
   return render_template('404.html'), 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=7000)
+    app.run(host='0.0.0.0', port=7000)
 
