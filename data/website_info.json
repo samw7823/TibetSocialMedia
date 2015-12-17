@@ -2,10 +2,15 @@
 {
   "headings": [
   {
-   "title": "hello",
+   "title": "home",
    "subheading": "this is home page",
    "hover_text": "Takes you to the logo page"
   },
+  {
+   "title": "media",
+   "subheading": "other things!",
+   "hover_text": "A little extra!"
+   },
   {
    "title": "maps",
    "subheading": "Mapping info about social media",
@@ -17,7 +22,12 @@
    "hover_text": "Look at languages used in social media"
   },
   {
-   "title": "analysis",
+   "title": "celebrities",
+   "subheading": "this is home page",
+   "hover_text": "Takes you to the logo page"
+  },
+  {
+   "title": "sources",
    "subheading": "other things!",
    "hover_text": "A little extra!"
    }

@@ -1,6 +1,90 @@
 {% extends "base.html" %}
 {% block results %}
-<h1> Hello </h1>
-<iframe width="100%" height="520" frameborder="0" src="https://cld2164.cartodb.com/viz/aa3f3f34-953f-11e5-85b5-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<div id="about">
+{% if info %}
+	{% for heading in info['headings'] %}
+		{% if heading['title'] == 'maps' %}
+
+
+
+	<div class="container">
+			<h2 class="page_heading">weibo users</h2>
+</div>
+<!-- <section class="module parallax parallax-5">
+--> 
+ <div class="container">
+<!--    <h1>Tibet</h1>  -->
+
+<iframe width="100%" height="720" frameborder="0" src="https://cld2164.cartodb.com/viz/aa3f3f34-953f-11e5-85b5-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+  </div>
+<!-- </section>
+-->
+
+<section class="module parallax parallax-12">
+  <div class="container">
+	</div>
+</section>
+
+	<div class="container">
+
+
+			<h2 class="page_heading">space and place</h2>
+</div>
+	<div class="container">
+<h3 class="subheading">
+
+While the rise of participation in virtual spaces may appear as a means of overcoming localization 
+or regional barriers, scholars exploring a variety of mass media forms, including television, 
+radio, and internet use, have argued that media remains highly localized (Sun & Chio 2012, Zhou & Sun 2004). 
+Previous research among Tibetan monks in exile has suggested that Tibetans are incorporating virtual 
+space into existing cosmologies. 
+For example, in 1996, monks from the Dalai Lama's Namgyal Monastery in Dharamsala used a 
+variation of the Kalachakra Tantra (through chants and digitized images of the Kalachakra 
+Mandala) to sanctify cyberspace as a forum for building religious communities (Helland 2014: 155).
+ Nonetheless, our findings suggest that Weibo users' self-representation primarily supports 
+large-scale narratives of religious, cultural, and linguistic identity, 
+and that these narratives map onto the relative centrality of places within China and Tibet. 
+For example, the majority of users are located in Beijing, and the user with the highest 
+number of followers is a lama located in Lhasa. 
+But, our research did not allow us to track the locations of followers, 
+and user profiles may not accurately reflect current location. 
+Therefore, further research is needed to understand how space and place co-constitute microblog use. 		
+</h3>
+</div>
+<section class="module parallax parallax-1">
+  <div class="container">
+	</div>
+</section>
+<div class="container">
+<h2 class="page_heading">virtual publics</h2>
+</div>
+<div class="container">
+	<h3 class="subheading">
+But, how do Tibetans, who represent ethnic and linguistic minority citizens of China, participate in these virtual publics? Currently, Tibetans occupy an uneasy relationship to the Central Chinese state. Alongside Tibetan political movements that advocate sovereignty, Tibetans' self-representation within China is strongly curtailed through state-level nationalist agendas, especially through public displays of culture and religion (Mullaney & Anderson 2010). And, from education, to the demographics and environmental consequences of urban development, to constraints on religious practice and assembly, policies at multiple levels of state and local governance shape Tibetans' daily lives. Social media increasingly enters into daily routines, as an estimated 56% of all Chinese citizens use microblogs (Svensson 2014: 169), and business reports suggest that Chinese citizens spend more than 40% of their time online on microblogs (Chiu et. al. 2012: 2). Given the powerful force that censorship and identity politics play in Tibetans' daily lives, scholars have theorized Tibetan media largely as constrained spaces that foster political commentary and the renewal of collective identity. For example, in an analysis of the Tibetan-run Chinese-language blog newtibet.com, Tashi Rabgey (2014) explains that the content of online discourse centered around the meaning of "Tibet" and the role of intellectual elites in Tibetan society. Tournadre also noted Tibetans' use of microblogs as spaces for critique of community-centered issues, such as Tibetan women's rights and the practice of self-immolation as political protest (2015: 81-82). 
+</h3>
+</div>
+<!-- </div>
+-->
+	<div class="container">
+<h2 class="page_heading">questions for further research</h2>
+<h3 class="subheading">Only 5% of China's microblog users are rural inhabitants (Syensson 2014: 173), while the majority of Tibetans within China and Tibet Autonomous Region live in rural settings (Fischer 2008: 633). Is there a rural-urban divide in microblog use among Tibetans, in particular? 
+</h3>
+<h3 class="subheading"> 
+How does the content of Weibo posts 
+contribute to the imagined and material significance 
+of space and place for Tibetans, 
+as well as for Chinese people?</h3>
+</div>
+<!-- 
+</div> -->
+
+		{% endif %}
+	{% endfor %}
+{% else %}
+	<p> error in loading page </p>
+{% endif %}
+</div>
 {% endblock %}
 

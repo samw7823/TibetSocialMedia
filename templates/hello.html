@@ -1,21 +1,32 @@
 {% extends "base.html" %}
 <!-- hello.html -->
-{% block title %}
-Hello World!
-{% endblock %}
 
 {% block results %}
 <div id="about">
 {% if info %}
 	{% for heading in info['headings'] %}
-		{% if heading['title'] == 'hello' %}
-			<h1>Hello World!</h1>
-			<h2 class="page_heading">{{heading['title']}}</h2><h3 class="subheading"><strong>{</strong>{{heading['subheading']}}<strong>}</strong></h3>
-			<p>This is a <em><strong>really</strong> cool</em> paragraph.  My favorite search engine is <a href="http://www.google.com">Google</a></p>
+		{% if heading['title'] == 'home' %}
+	<!--		<h2 class="page_heading">local histories in tibet</h2> -->
+		
+<section class="module parallax parallax-2">
+  <div class="container">
+    <h1>Tibet</h1>
+  </div>
+</section>
+<h3 class="subheading">
+<section class="module content">
+	<div class="container">
+		<h3 class="subheading">The Internet opened to China's public in 1996, as part of a "state-centric strategy" for advancing the nation's information technology (Rabgey 2008: 340). Blogging took off as early as 2004, followed later by social networking sites (Chiu et. al. 2012: 2).  Launched in August 2009, one month after the Chinese government blocked access to Twitter and Fanfou (another microblogging site resembling Twitter) (Yu et. al. 2011: 3), SinaWeibo emerged as a novel forum for content-sharing, networking, and debate. Known simply as Weibo, the site enters into, and also serves to reconstitute, a complex landscape of mass media within China.  While most mass-media, including television and radio, is state-organized but unique to regions and provinces (Sun & Chio 2012, Yong et. al. 2012), Weibo is a private company that serves all of China.  By the fall of 2010, Weibo had attracted 50 million users. That number would double to 100 million users by 2011, and to 400 million users in 2012 (Svensson 2014: 172).  The most recent estimate of Weibo users stands at 536 million (ibid: 169).
+		</h3>
+	</div>
+</section>
+
+
 		{% endif %}
 	{% endfor %}
 {% else %}
 	<p> error in loading page </p>
 {% endif %}
 </div>
+
 {% endblock %}

@@ -1,10 +1,64 @@
 {% extends "base.html" %}
 {% block results %}
-<h1>This is the langaues of different celebrities</h1>
 
+<div id="about">
+{% if info %}
+	{% for heading in info['headings'] %}
+		{% if heading['title'] == 'languages' %}
+
+
+		
+  <div class="container">
+<h2 class="page_heading">languages on weibo</h2>
+</div>
+
+<!-- <section class="module parallax parallax-4">
+  <div class="container">
+<h2 class="page_heading">languages used by different celebrities</h2>
+</div>
+</section> -->
+
+<section class="module content">
+	<div class="container">
 <div>
     <a href="https://plot.ly/~cld2164/8/" target="_blank" title="Language Used by All Users" style="display: block; text-align: center;"><img src="https://plot.ly/~cld2164/8.png" alt="Language Used by All Users" style="max-width: 100%;width: 1175px;"  width="1175" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="cld2164:8"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+</div>
+</section>
+
+<div class="container">
+<h3 class="subheading">
+Among the Weibo users we analyzed, four clear patterns of language use emerged: blogging in Chinese, blogging in both Chinese and Tibetan, blogging in Chinese but re-blogging content in Tibetan, or blogging only in Tibetan. Our data clearly demonstrate that the majority of lamas post only in Chinese, while the majority of celebrities post in both Tibetan and Chinese. Furthermore, users who posted exclusively in Tibetan were more likely to be located outside greater Tibet (and, even outside mainland China). 
+</h3>
+<h3 class="subheading">
+Celebrities' language use correlates with their language-background, as well as with expectations about the demographics of their fans and followers.  The use of written Tibetan in social media remains popular among older people, who primarily use WeChat to contact friends and family but largely have not expanded their media use to other platforms such as Weibo. Most celebrities have multi-lingual educational backgrounds, and belong to younger generations. They seek out fans throughout China, and not exclusively among Tibetan communities, as a means of building their image. Younger celebrities therefore are more likely to use both Tibetan and Chinese or exclusively Chinese languages.
+</h3>
+</div>
+
+
+
+  <div class="container">
+<h2 class="page_heading">Questions for further research:</h2>
+</div>
+  <div class="container">
+	<h3 class="subheading">
+	Why do lamas overwhelmingly publish in Chinese? Do they seek ethnic Chinese followers, or do they attempt to avoid censorship and controversy through their choice of language?
+	</h3>
+	<h3 class="subheading">
+	How can we situate microblogs in the historical context of the circulation of Tibetan print-media within China?
+	</h3>
+	<h3 class="subheading">
+	What are the linguistic constraints, including multi-lingual literacy and the availability of orthographies for computers and smartphones, which may influence language use on microblogs?
+	</h3>
+</div>
+
+		{% endif %}
+	{% endfor %}
+{% else %}
+	<p> error in loading page </p>
+{% endif %}
 </div>
 
 {% endblock %}
