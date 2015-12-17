@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 import json
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+#app.config["DEBUG"] = True
 
 #section title
 #subheading
