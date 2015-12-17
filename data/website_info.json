@@ -1,0 +1,26 @@
+
+{
+  "headings": [
+  {
+   "title": "hello",
+   "subheading": "this is home page",
+   "hover_text": "Takes you to the logo page"
+  },
+  {
+   "title": "maps",
+   "subheading": "Mapping info about social media",
+   "hover_text": "Quick stats"
+  },
+  {
+   "title": "languages",
+   "subheading": "languges used in posts",
+   "hover_text": "Look at languages used in social media"
+  },
+  {
+   "title": "analysis",
+   "subheading": "other things!",
+   "hover_text": "A little extra!"
+   }
+  ],
+  "job_status": true
+}

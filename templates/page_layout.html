@@ -1,0 +1,26 @@
+{% include "base.html" %}
+<div class = "nav">
+      <ul id="nav">
+         <li class="nav-item active"><a title="Home1" class="nav-link" href="#">
+            {{heading['title']}}</a>
+              </li>
+          <li class="nav-item"><a title="Home2" href="#">
+            {{heading['title']}}</a>
+          </li>
+      </ul>
+      <p> error in loading nav </p>
+</div>
+<div class="main">
+<div class="page_content">
+  {% block results %} {% endblock %}
+</div>
+</div>
+
+<div class="footer">
+
+<div class="span"> <a target='blank' href="http://www.twitter.com/eunicekokor" ><i class="fa fa-2x fa-twitter"></i></a> <a target='blank' href="http://www.github.com/eunicekokor"><i class="fa fa-2x fa-github-alt"></i></a> <a target='blank' href="http://www.linkedin.com/in/eunicekokor"> <i class="fa fa-2x fa-linkedin-square"></i> </a> 
+<br><span id="credit">made with <i class="fa fa-heart-o"></i> by eunice</span>
+</div>
+</div>
+
+

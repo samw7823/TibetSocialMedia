@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+</head>
+<body>
+    <div class = "nav">
+	{% if info %}
+       <ul id="nav">
+           {% for heading in info['headings'] %}
+              {% if heading['title'] == info['current'] %}
+        	 <li class="nav-item active"><a title="{{heading['hover_text']}}" class="nav-link" href="/{{heading['title']}}"i>{{heading['title']}}</a></li>
+	 	{% else %}
+		<li class="nav-item"><a title="{{heading['title']}}" href="/{{heading['title']}}">{{heading['title']}}</a></li>
+		{% endif %}
+	{% endfor %}
+       </ul>
+	{% else %}
+	<p> error in loading nav </p>
+	{% endif %}
+     </div>  
+<!-- Insert navagation bar -->
+
+<div class="main">
+<div class="page_content">
+
+  {% block results %}{% endblock %}
+</div>
+</div>
+
+  <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

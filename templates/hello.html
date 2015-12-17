@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+<!-- hello.html -->
+{% block title %}
+Hello World!
+{% endblock %}
+
+{% block results %}
+<div id="about">
+{% if info %}
+	{% for heading in info['headings'] %}
+		{% if heading['title'] == 'hello' %}
+			<h1>Hello World!</h1>
+			<h2 class="page_heading">{{heading['title']}}</h2><h3 class="subheading"><strong>{</strong>{{heading['subheading']}}<strong>}</strong></h3>
+			<p>This is a <em><strong>really</strong> cool</em> paragraph.  My favorite search engine is <a href="http://www.google.com">Google</a></p>
+		{% endif %}
+	{% endfor %}
+{% else %}
+	<p> error in loading page </p>
+{% endif %}
+</div>
+{% endblock %}
