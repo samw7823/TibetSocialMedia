@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 import json, os
 
 app = Flask(__name__)
-#app.config["DEBUG"] = True
+app.config["DEBUG"] = True
 
 #section title
 #subheading
@@ -58,5 +58,6 @@ def page_not_found(error):
   return render_template('404.html'), 404
 
 if __name__ == "__main__":
+  #  var port = process.env.PORT || 7000
     app.run(host='0.0.0.0', port=7000)
 
