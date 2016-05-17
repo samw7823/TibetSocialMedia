@@ -455,8 +455,9 @@ section.module.parallax h1 {
 section.module.parallax-1 {
   background-image: url("../img/icj1.jpg");
 }
+
 section.module.parallax-2 {
-  background-image: url("../img/India1.jpg");
+  background-image: url("../img/PSMGlobeAnimation-HD.mp4");
 }
 section.module.parallax-3 {
   background-image: url("../img/keven-osborne-tibet-9.jpg");
@@ -497,6 +498,10 @@ section.module.parallax-12 {
 section.module.parallax-13 {
   background-image: url("../img/Nomads-Dancing.jpg");
 }
+section.module.parallax-14 {
+  background-image: url("../img/PSMGlobeAnimation-HD.mp4");
+}
+
 
 @media all and (min-width: 600px) {
   section.module h2 {

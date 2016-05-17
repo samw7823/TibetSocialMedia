@@ -26,42 +26,17 @@ def home():
     website_info = get_website_info()
     website_info['current'] = 'home'
     return render_template("hello.html", info=website_info)
-@app.route("/media")
-def media():
-    website_info = get_website_info()
-    website_info['current'] = 'media'
-    return render_template("media.html", info=website_info)
 @app.route("/maps")
-def map():
+def media():
     website_info = get_website_info()
     website_info['current'] = 'maps'
     return render_template("maps.html", info=website_info)
 
-@app.route("/languages")
-def languages():
-    website_info = get_website_info()
-    website_info['current'] = 'languages'
-    return render_template("language.html", info=website_info)
-
-@app.route("/celebrities")
-def celebs():
-    website_info = get_website_info()
-    website_info['current'] = 'celebrities'
-    return render_template("celebrities.html", info=website_info)
-@app.route("/sources")
+@app.route("/about")
 def sources():
     website_info = get_website_info()
-    website_info['current'] = 'sources'
+    website_info['current'] = 'About'
     return render_template("sources.html", info=website_info)
-@app.route("/forum")
-def forum():
-    website_info = get_website_info()
-
-    return render_template("forum.html", info=website_info)
-@app.route("/people")
-def people():
-    website_info = get_website_info()
-    return render_template("featured_celebs.html", info=website_info)
 @app.errorhandler(404)
 def page_not_found(error):
   return render_template('404.html'), 404
